@@ -1,0 +1,78 @@
+.screen-swiper {
+	min-height: 435rpx;
+}
+swiper.square-dot .wx-swiper-dot {
+	background-color: #fff;
+	opacity: 0.4;
+	width: 10rpx;
+	height: 10rpx;
+	border-radius: 20rpx;
+	margin: 0 8rpx !important;
+}
+swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active {
+	opacity: 1;
+	width: 30rpx;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+	align-items: center;
+	min-height: 100rpx;
+}
+.cu-bar .action {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	max-width: 100%;
+}
+.bg-white {
+	background-color: #fff;
+	color: #666;
+}
+.clist-format{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+	align-items: center
+}
+.text-sm{
+  font-size: 24rpx;
+}
+.grey{
+  color:#aaa;
+}
+.sgrey{
+  color:#666;
+}
+.black{
+  color: #000000;
+}
+.blue{
+  color:#2f97ff;
+}
+.h_lignment{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.fright{
+  position: absolute;
+  right: 0;
+  margin: 0 30rpx 0 0;
+}
+.foot{
+  position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+.padding-a{
+  padding:20rpx;
+}
+
+.wsui-btn__hover_list {
+  opacity: 0.9;
+  background: #f4f4f4;
+}

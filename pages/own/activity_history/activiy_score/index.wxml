@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="card">
+    <text class="card-title">{{ title }}</text>
+    <text class="card-text">1、活动主办：{{ host }}</text>
+    <text class="card-text">2、活动时间：{{ time }}</text>
+    <text class="card-text">3、活动地点：{{ place }}</text>
+    <view class="card-score">
+      <text class="card-text">4、活动总分：</text>
+      <view class="total-score">
+        <van-rate value="{{ totalScore }}" readonly />
+      </view>
+    </view>
+  </view>
+  <view wx:for="{{list}}" wx:for-item="item" wx:key='item'>
+    <view class="element-list">
+      <view class="student-list">
+        <image class="list-image" src="{{ imghead }}"></image>
+        <text class="list-name">{{ item.studentName }}</text>
+        <view class="student-score">
+          <van-rate value="{{ item.score }}" readonly />
+        </view>
+      </view>
+      <text class="gradingContents">{{ item.content }}</text>
+    </view>
+  </view>
+</view>
+<view class="fl"></view>
+<view>
+  <van-button custom-class="demo-margin-bottom" color="#1b68db" size="large" block class="foot" type="info" bind:click="onClick">评分</van-button>
+</view>

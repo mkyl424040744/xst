@@ -1,0 +1,26 @@
+<view wx:if="{{flag}}">
+   <navigator url="" wx:for="{{activitylist}}" wx:key="item" class="clist-format">
+      <view width="18vw" height="18vw" style="padding:20rpx">
+         <van-image round fit="cover" width="13vw" height="13vw" src="{{ item.logo }}" />
+      </view>
+      <view>
+         <view class="">
+            <view class="">{{ item.name }}</view>
+            <view class="fright">
+               <text class="text-sm blue">{{ item.credit_type }}</text>
+            </view>
+         </view>
+         <view class="text-sm grey">{{ item.sponsor }}
+         </view>
+         <view class="text-sm grey">
+            {{ item.created }}
+         </view>
+      </view>
+   </navigator>
+</view>
+<view wx:if="{{!flag}}">
+   <view class="n_container">
+      <image class="n_img" src="../../../tabbar/no_activity.png"></image>
+      <text class="n_text">还没参加任何活动 !</text>
+   </view>
+</view>

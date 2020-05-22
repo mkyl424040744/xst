@@ -1,0 +1,90 @@
+<van-cell-group>
+  <view class="padding-5">
+    <view class="margin">
+      <van-field 
+        value="{{ uid }}" 
+        label="学号" 
+        id="uid"
+        maxlength="12"
+        placeholder="请输入学号" 
+        error-message="{{ sidMessage }}"
+        bind:blur="sidb"
+        border="{{ false }}" />
+    </view>
+    <view class="margin">
+      <van-field 
+        value="{{ name }}" 
+        label="姓名" 
+        placeholder="请输入姓名" 
+        error-message="{{ nameMessage }}"
+        bind:blur="nameb"
+        border="{{ false }}" />
+    </view>
+    <view class="margin">
+      <van-field 
+        value="{{ password }}" 
+        type="password" 
+        label="密码" 
+        placeholder="请输入密码" 
+        error-message="{{ passwordMessage }}"
+        bind:blur="pawb"
+        border="{{ false }}" />
+    </view>
+    <view class="margin">
+      <van-field 
+        value="{{ password2 }}" 
+        type="password" 
+        label="确认密码" 
+        placeholder="请输入密码" 
+        error-message="{{ password2Message }}"
+        bind:blur="paw2b"
+        border="{{ false }}" />
+    </view>
+    <view class="margin">
+      <van-field 
+        value="{{ email }}" 
+        label="邮箱" 
+        placeholder="email" 
+        error-message="{{ emailMessage }}"
+        bind:blur="emailb"
+        email
+        border="{{ false }}" 
+        />
+    </view>
+    <view class="margin">
+      <van-cell-group border="{{ false }}">
+        <van-field 
+          value="{{ code }}" 
+          center 
+          clearable label="验证码" 
+          placeholder="请输入4位验证码" 
+          maxlength="4"
+          error-message="{{ vcMessage }}"
+          use-button-slot 
+          bind:blur="vcb"
+          border="{{ false }}">
+          <van-button 
+            slot="button" 
+            size="small" 
+            type="primary" 
+            custom-class="button"
+            bind:click="getcode"
+            >
+            发送验证码
+          </van-button>
+        </van-field>
+      </van-cell-group>
+    </view>
+    <view style="margin:50rpx 0 0 0">
+      <van-button 
+        type="primary" 
+        size="large" 
+        round
+        color="#2f97ff"
+        bind:click="onClickButton"
+        >
+        注册
+      </van-button>
+    </view>
+  </view>
+</van-cell-group>

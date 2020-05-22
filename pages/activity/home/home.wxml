@@ -1,0 +1,35 @@
+<scroll-view id="scroll_y">
+   <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+      <swiper-item wx:for="{{swiperList}}" wx:key="item">
+         <image src="{{item.url}}" wx:if="{{item.type=='image'}}" mode='widthFix' class='' style='width:100%;height:486rpx'></image>
+      </swiper-item>
+   </swiper>
+   <van-dropdown-menu>
+      <van-dropdown-item id="item1" title="{{ itemTitle1 }}" value="{{ value1 }}" options="{{ option1 }}" bind:change="sort" />
+      <van-dropdown-item id="item2" title="{{ itemTitle2 }}" value="{{ value2 }}" options="{{ option2 }}" bind:change="sort" />
+   </van-dropdown-menu>
+   <view wx:for="{{activitylist}}" wx:key="item">
+      <view class="clist-format" bind:tap="onPostTap" data-postid="{{item.uid}}" hover-class='wsui-btn__hover_list'>
+         <view width="18vw" height="18vw" style="padding:20rpx">
+            <van-image round fit="cover" width="13vw" height="13vw" src="{{ item.logo }}" />
+         </view>
+         <view>
+            <view class="">
+               <view class="">{{ item.name }}</view>
+               <view class="fright">
+                  <text class="text-sm blue">{{ item.credit_type }}</text>
+               </view>
+            </view>
+            <view class="text-sm grey">{{ item.sponsor }}</view>
+            <view class="text-sm grey">{{ item.created }}</view>
+         </view>
+      </view>
+   </view>
+</scroll-view>
+<view wx:if="{{ loadingdown }}">
+   <view class="h_lignment padding-a">
+      <van-loading size="12px" color="#000000">
+         <view class="black" style="font-size:12px;">加载中...</view>
+      </van-loading>
+   </view>
+</view>

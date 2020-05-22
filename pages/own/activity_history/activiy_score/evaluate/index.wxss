@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.evaluate-head {
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+
+.evaluate-text {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.evaluate-right {
+  position: absolute;
+  right: 20rpx;
+}
+
+.variable {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.textarea-view {
+  background-color: #eee;
+  padding: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+textarea {
+  color: #333;
+}
+
+.down-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20rpx;
+}
+
+.button {
+  position: absolute;
+  right: 20rpx;
+}

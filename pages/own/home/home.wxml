@@ -1,0 +1,27 @@
+<view wx:if="{{ login_mark }}">
+   <view class="padding-a h_lignment">
+      <!-- <view style="margin:0 40rpx 0 0">
+         <van-image round width="4rem" height="4rem" fit="cover" src="{{ img }}" />
+      </view> -->
+      <view class="imgHead">
+         <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view>
+         <view style="margin:0 0 10rpx 0">{{ name }}
+            <van-image round width="1rem" height="1rem" fit="cover" src="{{ sex }}" />
+         </view>
+         <view style="margin:10rpx 0 0 0">学号：{{ number }}</view>
+      </view>
+   </view>
+</view>
+<view wx:else>
+   <navigator class="padding-a" url="/pages/login/login">登录/注册</navigator>
+</view>
+<demo-block title="活动">
+   <van-cell title="已报活动" is-link url="/pages/own/reported_activities/index?studentId={{number}}" />
+   <van-cell title="活动历史" is-link url="/pages/own/activity_history/index?studentId={{number}}" />
+</demo-block>
+<demo-block title="其他">
+   <van-cell title="个人设置" is-link url="/pages/own/settings/index" />
+   <!-- <van-cell title="问题反馈" is-link url="/pages/own/feedback/index" /> -->
+</demo-block>

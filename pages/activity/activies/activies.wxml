@@ -1,0 +1,57 @@
+<scroll-view scroll-y>
+  <view class="v_lignment">
+    <text style="font-weight: bold;font-size: 36rpx;">{{aname}}</text>
+    <view style="margin:2% 0 0 0;">
+      <van-tag class="demo-margin-right" color="#2f97ff" size="medium" style="margin:0 3% 0 0;padding:0 1% 0 1%">{{atitle}}</van-tag>
+      <van-tag class="demo-margin-right" color="#e54d42" round size="medium">{{akind}}</van-tag>
+    </view>
+  </view>
+  <van-divider />
+  <import src="/wxParser/index.wxml" />
+  <view class="padding-5">
+    <view class="wxParser">
+      <template is="wxParser" data="{{wxParserData:richText.nodes}}" />
+    </view>
+  </view>
+  <view style="width:100%;height:100rpx"></view>
+</scroll-view>
+<view wx:if="{{ isOverlay }}">
+  <view class="overlay">
+    <view class="z-2">
+      <view class="centered">
+        <van-loading size="60rpx" vertical>加载中...</van-loading>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else>
+  <van-button 
+    size="large" 
+    block 
+    custom-class="demo-margin-bottom" 
+    color="#e54d42" 
+    class="foot" 
+    bind:click="showElasticFrame"
+    >
+    立即报名
+  </van-button>
+</view>
+<van-popup show="{{ joinef }}" custom-style="border-radius: 13px;width:630rpx;" bind:close="hideElasticFrame">
+  <view class="" style="">
+    <view class="vlignment" style="padding:60rpx 20rpx 60rpx 20rpx;">
+      <view>是否报名?</view>
+    </view>
+    <van-row>
+      <van-col span="12">
+        <van-button color="#fff" custom-style="width:100%;" bind:click="hideElasticFrame">
+          <view style="color:#000;">取消</view>
+        </van-button>
+      </van-col>
+      <van-col span="12">
+        <van-button color="#fff" custom-style="width:100%;" bind:click="join">
+          <view style="color:#1989fa;">确认</view>
+        </van-button>
+      </van-col>
+    </van-row>
+  </view>
+</van-popup>

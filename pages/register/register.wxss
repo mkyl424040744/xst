@@ -1,0 +1,18 @@
+/* page {
+  background-color: #efefef;
+} */
+.foot{
+  position: fixed;
+	width: 100%;
+	bottom: 0;
+	box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+.padding-5{
+  padding: 5%;
+}
+.bg-color{
+  background-color: #efefef;
+}
+.margin{
+  margin: 0 0 2% 0;
+}

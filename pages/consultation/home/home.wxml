@@ -1,0 +1,44 @@
+<view class="h_lignment" style="padding:32rpx;font-size:42rpx;color:#2f97ff;">
+  <text style="">总学时：</text>
+  <view>{{ credit }}</view>
+</view>
+<navigator
+  url="/pages/consultation/consultation"
+  class="container distance text-color" 
+  style="background-color:rgb(255,108,112);"
+>
+  <text>身心素质</text>
+  <view>{{ wtCredit }}</view>
+</navigator>
+<navigator
+  url="/pages/consultation/consultation"
+  class="container distance text-color" 
+  style="background-color:rgb(255,162,100);"
+>
+  <text>思想品德素质</text>
+  <view>{{ sxddCredit }}</view>
+</navigator>
+<navigator
+  url="/pages/consultation/consultation"
+  class="container distance text-color" 
+  style="background-color:rgb(255,239,100);"
+>
+  <text>创新创业素质</text>
+  <view>{{ cxcyCredit }}</view>
+</navigator>
+<navigator
+  url="/pages/consultation/consultation"
+  class="container distance text-color" 
+  style="background-color:rgb(100,255,107);"
+>
+  <text>文体素质</text>
+  <view>{{ wtCredit }}</view>
+</navigator>
+<navigator 
+  url="/pages/consultation/consultation"
+  class="container distance text-color" 
+  style="background-color:rgb(197,100,255);"
+>
+  <text>法律素养</text>
+  <view>{{ flCredit }}</view>
+</navigator>

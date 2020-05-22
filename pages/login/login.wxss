@@ -1,0 +1,17 @@
+.padding-5{
+  padding: 5%;
+}
+.padding-a{
+  padding: 30rpx;
+}
+.conter{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.text-size{
+  font-size: 24rpx;
+}
+.text-blue{
+  color:#00d9ff;
+}

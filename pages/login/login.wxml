@@ -1,0 +1,40 @@
+<van-cell-group>
+<view class="padding-5">
+  <van-field
+    value="{{ username }}"
+    label="学号"
+    left-icon="contact"
+    maxlength="12"
+    placeholder="请输入学号" 
+    bind:blur="setusername"
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ password }}"
+    type="{{ ptype }}"
+    label="密码"
+    placeholder="请输入密码"
+    left-icon="bag-o"
+    bind:blur="setpassword"
+    data-i="{{ pi }}"
+    border="{{ false }}"
+  />
+  <view style="margin:50rpx 0 0 0">
+    <van-button 
+      type="primary" 
+      size="large" 
+      round
+      color="#2f97ff"
+      bind:click="onClickButton"
+      >
+      登录
+    </van-button>
+    <navigator 
+      class="padding-a conter text-size text-blue" 
+      url="/pages/register/register"
+      >
+      注册
+    </navigator>
+  </view>
+</view>
+</van-cell-group>

@@ -1,0 +1,19 @@
+<van-popup show="{{ joinef }}" custom-style="border-radius: 13px;width:630rpx;" bind:close="hideElasticFrame">
+  <view class="" style="">
+    <view class="vlignment" style="padding:60rpx 20rpx 60rpx 20rpx;">
+      <view>是否以 <text class="text-lg red">{{ atext }}</text> 身份报名?</view>
+    </view>
+    <van-row>
+      <van-col span="12">
+        <van-button color="#fff" custom-style="width:100%;" bind:click="hideElasticFrame">
+          <view style="color:#000;">取消</view>
+        </van-button>
+      </van-col>
+      <van-col span="12">
+        <van-button color="#fff" custom-style="width:100%;" bind:click="">
+          <view style="color:#1989fa;">确认</view>
+        </van-button>
+      </van-col>
+    </van-row>
+  </view>
+</van-popup>

@@ -1,0 +1,84 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color:#1b68db; 
+  border-radius: 10rpx;
+  color: white;
+  padding: 10rpx;
+}
+
+.card-title{
+  text-align: center;
+  margin-top: 10rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.card-text{
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  font-size: 28rpx;
+}
+
+.card-score{
+  display: flex;
+  flex-direction: row;
+}
+
+.total-score{
+  margin-top: 5rpx;
+}
+
+.student-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.list-image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.list-name{
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.element-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.student-score{
+  position: absolute;
+  right: 20rpx;
+}
+
+.gradingContents{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 50rpx;
+  letter-spacing: 1rpx;
+}
+
+.foot{
+  position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.fl{
+   height: 100rpx;
+}

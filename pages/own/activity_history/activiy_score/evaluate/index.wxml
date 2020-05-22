@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="evaluate-head">
+    <text class="evaluate-text">评价内容</text>
+    <view class="evaluate-right">
+      <text class="variable">{{number}} / 200</text>
+    </view>
+  </view>
+  <view class="textarea-view">
+  <textarea maxlength='200' bindinput="variable" value="{{content}}" placeholder="请输入对该活动的评价内容.."></textarea>
+  </view>
+  <view class="down-container">
+    <van-rate value="{{ score }}" bind:change="onChange"/>
+    <van-button class="button" color="#2f97ff" size="small" bind:click="submit">发布</van-button>
+  </view>
+</view>
